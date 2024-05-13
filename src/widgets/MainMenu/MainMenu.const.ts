@@ -2,6 +2,11 @@ import { TreeViewItem } from "@/shared/ui/components/TreeView";
 
 export const menuItems: TreeViewItem[] = [
   {
+    id: "home",
+    title: "Главная",
+    isDirectory: false,
+  },
+  {
     id: "0",
     title: "frontend",
     isDirectory: true,

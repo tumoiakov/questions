@@ -10,7 +10,7 @@ function TreeView({ items }: TreeViewProps) {
       ),
     []
   );
-  return <div className="flex flex-col gap-y-1 p-1 w-full">{...itemsViews}</div>;
+  return <div className="flex flex-col gap-y-4 p-1 w-full">{...itemsViews}</div>;
 }
 
 export default TreeView;

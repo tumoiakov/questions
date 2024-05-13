@@ -8,13 +8,20 @@ function App() {
 
   return (
     <div className="flex flex-col min-h-dvh">
-      <Header className="grow-0" title="Home" onMenuClick={switchMenuState} />
+      <Header
+        className="grow-0"
+        title="Главная"
+        onMenuClick={switchMenuState}
+      />
 
       <main className="grow flex h-full">
         <MainMenu isOpen={isMenuOpen} />
         <section className="p-2 w-full ">
           <Plate>
-            <PlateContent className="w-full caret-transparent" placeholder="Type..." />
+            <PlateContent
+              className="w-full caret-transparent"
+              placeholder="Type..."
+            />
           </Plate>
         </section>
       </main>

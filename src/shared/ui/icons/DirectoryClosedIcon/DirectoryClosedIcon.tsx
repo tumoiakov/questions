@@ -2,7 +2,7 @@ import { DirectoryClosedIconProps } from "./DirectoryClosedIcon.types";
 
 function DirectoryClosedIcon({ className, onClick }: DirectoryClosedIconProps) {
   return (
-    <div aria-label="Menu icon" className={className} onClick={onClick}>
+    <div aria-label="closed directory icon" className={className} onClick={onClick}>
       <svg
         className="fill-current"
         xmlns="http://www.w3.org/2000/svg"
