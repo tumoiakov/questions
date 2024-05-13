@@ -17,7 +17,7 @@ function Header({ title, className, onMenuClick }: HeaderProps) {
         <MenuIcon />
       </Button>
 
-      <h1 className="block ml-6 text-3xl pt-2">{title}</h1>
+      <h1 className="block ml-6 text-3xl">{title}</h1>
     </header>
   );
 }

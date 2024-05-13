@@ -9,11 +9,12 @@ function MainMenu({ isOpen }: MainMenuProps) {
   return (
     isOpen && (
       <Resizable
-        className="border-r p-2"
+        className="border-r p-2 overflow-hidden"
         defaultSize={{
           height: "auto",
           width: 250,
         }}
+        minWidth={200}
         enable={{
           top: false,
           right: true,
@@ -27,8 +28,8 @@ function MainMenu({ isOpen }: MainMenuProps) {
       >
         <Input
           className="p-2 pb-4 mb-4 border-b-1 w-full"
-          endContent={<SearchIcon />}
-					placeholder="Поиск"
+          endContent={<SearchIcon className="mt-1 min-w-2 min-h-2" />}
+          placeholder="Поиск"
         />
         <TreeView items={menuItems} />
       </Resizable>

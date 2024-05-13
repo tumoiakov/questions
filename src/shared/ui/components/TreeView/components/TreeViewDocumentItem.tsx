@@ -20,7 +20,7 @@ function TreeViewDocumentItem({
     >
       <FileIcon className="min-h-5 min-w-5" />
       <Tooltip content={title} isDisabled={isTooltipDisabled} offset={-3}>
-        <p ref={titleRef} className="pt-1 truncate">
+        <p ref={titleRef} className="truncate">
           {title}
         </p>
       </Tooltip>
