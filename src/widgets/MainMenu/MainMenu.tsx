@@ -2,8 +2,9 @@ import { menuItems } from "./MainMenu.const";
 import TreeView from "@/shared/ui/components/TreeView";
 import { MainMenuProps } from "./MainMenu.types";
 import { Resizable } from "re-resizable";
-import { Input } from "@nextui-org/react";
+import { Button, Input } from "@nextui-org/react";
 import SearchIcon from "@/shared/ui/icons/SearchIcon";
+import AddIcon from "@/shared/ui/icons/AddIcon";
 
 function MainMenu({ isOpen }: MainMenuProps) {
   return (
@@ -32,6 +33,11 @@ function MainMenu({ isOpen }: MainMenuProps) {
           placeholder="Поиск"
         />
         <TreeView items={menuItems} />
+        <section className="mt-4 pt-4 border-t-1">
+          <Button className="w-full pr-8" startContent={<AddIcon />}>
+            Добавить
+          </Button>
+        </section>
       </Resizable>
     )
   );

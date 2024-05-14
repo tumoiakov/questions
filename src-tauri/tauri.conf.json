@@ -7,7 +7,7 @@
   },
   "package": {
     "productName": "questionsdesktop",
-    "version": "0.0.1"
+    "version": "0.0.2"
   },
   "tauri": {
     "allowlist": {
@@ -22,7 +22,8 @@
         "title": "Questions (alpha)",
         "width": 1280,
         "height": 800,
-        "maximized": true
+        "maximized": true,
+        "additionalBrowserArgs": "--enable-features=OverlayScrollbar,msOverlayScrollbarWinStyle,msOverlayScrollbarWinStyleAnimation"
       }
     ],
     "security": {
@@ -31,7 +32,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "com.tumoyakov",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",

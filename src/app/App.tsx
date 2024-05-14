@@ -1,28 +1,23 @@
 import Header from "@/widgets/header";
 import useSwitchState from "@/shared/hooks/useSwitchState";
 import MainMenu from "@/widgets/MainMenu";
-import { Plate, PlateContent } from "@udecode/plate-common";
+import Editor from "@/shared/ui/components/Editor";
 
 function App() {
   const [isMenuOpen, switchMenuState] = useSwitchState(true);
 
   return (
-    <div className="flex flex-col min-h-dvh">
+    <div className="flex flex-col min-h-dvh max-h-dvh overflow-hidden">
       <Header
         className="grow-0"
         title="Главная"
         onMenuClick={switchMenuState}
       />
 
-      <main className="grow flex h-full">
+      <main className="grow flex h-full max-h-full overflow-hidden">
         <MainMenu isOpen={isMenuOpen} />
-        <section className="p-2 w-full ">
-          <Plate>
-            <PlateContent
-              className="w-full caret-transparent"
-              placeholder="Type..."
-            />
-          </Plate>
+        <section className="p-4 w-full max-w-full max-h-full flex flex-col items-center overflow-auto">
+          <Editor />
         </section>
       </main>
     </div>

@@ -3,6 +3,7 @@ import { TreeViewProps } from "./TreeView.types";
 import { createItemsTree } from "./TreeView.utils";
 
 function TreeView({ items }: TreeViewProps) {
+  
   const itemsViews = useMemo(
     () =>
       createItemsTree(items, (itemId: string) =>

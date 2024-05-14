@@ -15,4 +15,16 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
   }
+
+  body {
+    background-color: #f6f6f6;
+
+    @apply min-h-dvh max-h-dvh;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
